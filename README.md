@@ -1,4 +1,4 @@
-# LibreWolf: Perfect Edition  
+# LibreWolf: Perfectly Portable Edition  
 **A carefully curated selection of settings, add-ons, and tweaks to enhance speed, usability, and aesthetics.**  
 
 ## 📦 What's Included  
