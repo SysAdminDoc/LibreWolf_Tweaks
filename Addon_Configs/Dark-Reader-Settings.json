@@ -1,0 +1,234 @@
+{
+    "schemeVersion": 0,
+    "enabled": true,
+    "fetchNews": true,
+    "theme": {
+        "mode": 1,
+        "brightness": 112,
+        "contrast": 105,
+        "grayscale": 0,
+        "sepia": 0,
+        "useFont": false,
+        "fontFamily": "Segoe UI",
+        "textStroke": 0,
+        "engine": "dynamicTheme",
+        "stylesheet": "",
+        "darkSchemeBackgroundColor": "#1e1e2e",
+        "darkSchemeTextColor": "#cdd6f4",
+        "lightSchemeBackgroundColor": "#dcdad7",
+        "lightSchemeTextColor": "#181a1b",
+        "scrollbarColor": "",
+        "selectionColor": "auto",
+        "styleSystemControls": false,
+        "lightColorScheme": "Default",
+        "darkColorScheme": "Catppuccin",
+        "immediateModify": false
+    },
+    "presets": [],
+    "customThemes": [
+        {
+            "url": [
+                "*.officeapps.live.com"
+            ],
+            "theme": {
+                "mode": 1,
+                "brightness": 100,
+                "contrast": 100,
+                "grayscale": 0,
+                "sepia": 0,
+                "useFont": false,
+                "fontFamily": "Segoe UI",
+                "textStroke": 0,
+                "engine": "cssFilter",
+                "stylesheet": "",
+                "darkSchemeBackgroundColor": "#181a1b",
+                "darkSchemeTextColor": "#e8e6e3",
+                "lightSchemeBackgroundColor": "#dcdad7",
+                "lightSchemeTextColor": "#181a1b",
+                "scrollbarColor": "",
+                "selectionColor": "auto",
+                "styleSystemControls": false,
+                "lightColorScheme": "Default",
+                "darkColorScheme": "Default",
+                "immediateModify": false
+            },
+            "builtIn": true
+        },
+        {
+            "url": [
+                "*.sharepoint.com"
+            ],
+            "theme": {
+                "mode": 1,
+                "brightness": 100,
+                "contrast": 100,
+                "grayscale": 0,
+                "sepia": 0,
+                "useFont": false,
+                "fontFamily": "Segoe UI",
+                "textStroke": 0,
+                "engine": "cssFilter",
+                "stylesheet": "",
+                "darkSchemeBackgroundColor": "#181a1b",
+                "darkSchemeTextColor": "#e8e6e3",
+                "lightSchemeBackgroundColor": "#dcdad7",
+                "lightSchemeTextColor": "#181a1b",
+                "scrollbarColor": "",
+                "selectionColor": "auto",
+                "styleSystemControls": false,
+                "lightColorScheme": "Default",
+                "darkColorScheme": "Default",
+                "immediateModify": false
+            },
+            "builtIn": true
+        },
+        {
+            "url": [
+                "docs.google.com"
+            ],
+            "theme": {
+                "mode": 1,
+                "brightness": 100,
+                "contrast": 100,
+                "grayscale": 0,
+                "sepia": 0,
+                "useFont": false,
+                "fontFamily": "Segoe UI",
+                "textStroke": 0,
+                "engine": "cssFilter",
+                "stylesheet": "",
+                "darkSchemeBackgroundColor": "#181a1b",
+                "darkSchemeTextColor": "#e8e6e3",
+                "lightSchemeBackgroundColor": "#dcdad7",
+                "lightSchemeTextColor": "#181a1b",
+                "scrollbarColor": "",
+                "selectionColor": "auto",
+                "styleSystemControls": false,
+                "lightColorScheme": "Default",
+                "darkColorScheme": "Default",
+                "immediateModify": false
+            },
+            "builtIn": true
+        },
+        {
+            "url": [
+                "onedrive.live.com"
+            ],
+            "theme": {
+                "mode": 1,
+                "brightness": 100,
+                "contrast": 100,
+                "grayscale": 0,
+                "sepia": 0,
+                "useFont": false,
+                "fontFamily": "Segoe UI",
+                "textStroke": 0,
+                "engine": "cssFilter",
+                "stylesheet": "",
+                "darkSchemeBackgroundColor": "#181a1b",
+                "darkSchemeTextColor": "#e8e6e3",
+                "lightSchemeBackgroundColor": "#dcdad7",
+                "lightSchemeTextColor": "#181a1b",
+                "scrollbarColor": "",
+                "selectionColor": "auto",
+                "styleSystemControls": false,
+                "lightColorScheme": "Default",
+                "darkColorScheme": "Default",
+                "immediateModify": false
+            },
+            "builtIn": true
+        },
+        {
+            "url": [
+                "www.facebook.com"
+            ],
+            "theme": {
+                "mode": 1,
+                "brightness": 88,
+                "contrast": 111,
+                "grayscale": 0,
+                "sepia": 0,
+                "useFont": false,
+                "fontFamily": "Segoe UI",
+                "textStroke": 0,
+                "engine": "dynamicTheme",
+                "stylesheet": "",
+                "darkSchemeBackgroundColor": "#1e1e2e",
+                "darkSchemeTextColor": "#cdd6f4",
+                "lightSchemeBackgroundColor": "#dcdad7",
+                "lightSchemeTextColor": "#181a1b",
+                "scrollbarColor": "",
+                "selectionColor": "auto",
+                "styleSystemControls": false,
+                "lightColorScheme": "Default",
+                "darkColorScheme": "Catppuccin",
+                "immediateModify": false
+            }
+        },
+        {
+            "url": [
+                "weather.com"
+            ],
+            "theme": {
+                "mode": 1,
+                "brightness": 111,
+                "contrast": 113,
+                "grayscale": 0,
+                "sepia": 0,
+                "useFont": false,
+                "fontFamily": "Segoe UI",
+                "textStroke": 0,
+                "engine": "dynamicTheme",
+                "stylesheet": "",
+                "darkSchemeBackgroundColor": "#1e1e2e",
+                "darkSchemeTextColor": "#cdd6f4",
+                "lightSchemeBackgroundColor": "#dcdad7",
+                "lightSchemeTextColor": "#181a1b",
+                "scrollbarColor": "",
+                "selectionColor": "auto",
+                "styleSystemControls": false,
+                "lightColorScheme": "Default",
+                "darkColorScheme": "Catppuccin",
+                "immediateModify": false
+            }
+        }
+    ],
+    "enabledByDefault": true,
+    "enabledFor": [],
+    "disabledFor": [
+        "old.reddit.com"
+    ],
+    "changeBrowserTheme": true,
+    "syncSettings": true,
+    "syncSitesFixes": true,
+    "automation": {
+        "enabled": false,
+        "mode": "time",
+        "behavior": "OnOff"
+    },
+    "time": {
+        "activation": "18:00",
+        "deactivation": "9:00"
+    },
+    "location": {
+        "latitude": null,
+        "longitude": null
+    },
+    "previewNewDesign": true,
+    "previewNewestDesign": false,
+    "enableForPDF": true,
+    "enableForProtectedPages": true,
+    "enableContextMenus": false,
+    "detectDarkTheme": true,
+    "readNews": [
+        "firefox-bugs"
+    ],
+    "displayedNews": [
+        "firefox-bugs"
+    ],
+    "installation": {
+        "date": 1741261632092,
+        "reason": "browser_update",
+        "version": "4.9.103"
+    }
+}
