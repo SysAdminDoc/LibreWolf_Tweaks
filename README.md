@@ -1,7 +1,7 @@
 # LibreWolf: Dark Portable Edition  
 **A carefully curated selection of settings, add-ons, and tweaks to enhance speed, usability, and aesthetics.**  
 
-![2025-03-11 21 55 03](https://github.com/user-attachments/assets/7870ec0a-9971-4133-94f0-1752c6836f7d)
+![librewolf](https://github.com/user-attachments/assets/10db9712-0ac9-41ff-9032-46a1ef67b847)
 
 ## 📦 What's Included  
 **LibreWolf Dark Portable** – A fully configured profile with optimizations and [pre-installed tweaks](https://github.com/SysAdminDoc/LibreWolf_DarkPortable/blob/main/user.js) for an improved browsing experience.  
