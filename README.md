@@ -21,9 +21,9 @@ Each add-on is thoughtfully configured to maximize usability:
 - **Reddit Enhancement Suite** – Pre-configured for an improved Reddit experience.  
 - **Tab Nine** – A sleek and functional new tab page, customized to my preferences.  
 
-## 📸 Preview of Installed Add-ons  
-![Add-ons Preview](https://github.com/user-attachments/assets/38cdec6e-a179-42ec-957c-8191e2b9772a)  
+## [Download latest zip here](https://github.com/SysAdminDoc/LibreWolf_DarkPortable/releases/tag/v0.0.5)
 
 If you want to support my caffeine addiction:
+
 <a href="https://www.buymeacoffee.com/mattcreatingthings" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
 
