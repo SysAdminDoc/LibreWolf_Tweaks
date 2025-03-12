@@ -1,5 +1,3 @@
-<a href="https://www.buymeacoffee.com/mattcreatingthings" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
-
 # LibreWolf: Dark Portable Edition  
 **A carefully curated selection of settings, add-ons, and tweaks to enhance speed, usability, and aesthetics.**  
 
@@ -29,3 +27,7 @@ Each add-on is thoughtfully configured to maximize usability:
 
 ## 📸 Preview of Installed Add-ons  
 ![Add-ons Preview](https://github.com/user-attachments/assets/38cdec6e-a179-42ec-957c-8191e2b9772a)  
+
+If you want to support my caffeine addiction:
+<a href="https://www.buymeacoffee.com/mattcreatingthings" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
+
