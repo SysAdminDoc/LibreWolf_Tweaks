@@ -5,12 +5,13 @@
 
 ![librewolf2](https://github.com/user-attachments/assets/53be4b98-94e5-44ab-a790-6aadfa1ac30b)
 
+## [Download latest release here](https://github.com/SysAdminDoc/LibreWolf_DarkPortable/releases/tag/v0.0.5)
+
 ## 📦 What's Included  
 **LibreWolf Dark Portable** – A fully [configured profile](https://github.com/SysAdminDoc/LibreWolf_DarkPortable/tree/main/Extension_Configs) with optimizations and [pre-installed tweaks](https://github.com/SysAdminDoc/LibreWolf_DarkPortable/blob/main/user.js) for an improved browsing experience.  
 
-Tab/Context Menu theme credit goes to [bmFtZQ](https://github.com/bmFtZQ)!
-
-Dark mode theme inspiration goes to [dracula](https://github.com/dracula/dracula-theme)!
+- Tab/Context Menu theme credit goes to [bmFtZQ](https://github.com/bmFtZQ)!
+- Dark mode theme inspiration goes to [dracula](https://github.com/dracula/dracula-theme)!
 
 ## 🔧 Extensions & Enhancements  
 Each add-on is thoughtfully configured to maximize usability:  
@@ -25,7 +26,7 @@ Each add-on is thoughtfully configured to maximize usability:
 - **Reddit Enhancement Suite** – Pre-configured for an improved Reddit experience.  
 - **Tab Nine** – A sleek and functional new tab page, customized to my preferences.  
 
-## [Download latest here](https://github.com/SysAdminDoc/LibreWolf_DarkPortable/releases/tag/v0.0.5)
+##
 
 If you want to support my caffeine addiction:
 
