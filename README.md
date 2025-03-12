@@ -1,7 +1,7 @@
 # LibreWolf: Dark Portable Edition  
 **A carefully curated selection of settings, add-ons, and tweaks to enhance speed, usability, and aesthetics.**  
 
-![libre](https://github.com/user-attachments/assets/dfbe0260-5bfa-4432-b999-e112971f08e4)
+![libre60](https://github.com/user-attachments/assets/8e797be2-1f45-4c00-bb4e-2d50e9267e14)
 
 ![librewolf2](https://github.com/user-attachments/assets/53be4b98-94e5-44ab-a790-6aadfa1ac30b)
 
