@@ -8,7 +8,7 @@
 ![2025-03-11 21 55 35](https://github.com/user-attachments/assets/72253229-ba98-4b9f-bed5-d02664f2ffea)
 
 ## 📦 What's Included  
-**LibreWolf_Portable.7z** – A fully configured profile with optimizations and pre-installed tweaks for an improved browsing experience.  
+**LibreWolf_Portable.7z** – A fully configured profile with optimizations and [pre-installed tweaks](https://github.com/SysAdminDoc/LibreWolf_DarkPortable/blob/main/user.js) for an improved browsing experience.  
 
 Theme: https://github.com/bmFtZQ/edge-frfox
 
