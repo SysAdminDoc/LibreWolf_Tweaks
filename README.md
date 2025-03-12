@@ -7,7 +7,8 @@
 **LibreWolf Dark Portable** – A fully configured profile with optimizations and [pre-installed tweaks](https://github.com/SysAdminDoc/LibreWolf_DarkPortable/blob/main/user.js) for an improved browsing experience.  
 
 Tab/Context Menu theme credit goes to [bmFtZQ](https://github.com/bmFtZQ)!
-Dark mode theme inspiration goes to [dracula](https://github.com/dracula/dracula-theme)
+
+Dark mode theme inspiration goes to [dracula](https://github.com/dracula/dracula-theme)!
 
 ## 🔧 Extensions & Enhancements  
 Each add-on is thoughtfully configured to maximize usability:  
