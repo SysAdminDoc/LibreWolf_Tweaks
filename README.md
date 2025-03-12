@@ -1,4 +1,4 @@
-# LibreWolf: Perfectly Portable Edition  
+# LibreWolf: Dark Portable Edition  
 **A carefully curated selection of settings, add-ons, and tweaks to enhance speed, usability, and aesthetics.**  
 
 ![2025-03-11 21 55 16](https://github.com/user-attachments/assets/5c638d29-c458-4573-9417-a38eb869285f)
