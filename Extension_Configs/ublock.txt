@@ -1,0 +1,52 @@
+{
+  "timeStamp": 1741755449994,
+  "version": "1.62.0",
+  "userSettings": {
+    "contextMenuEnabled": false,
+    "uiAccentCustom": true,
+    "uiTheme": "dark",
+    "importedLists": [],
+    "showIconBadge": false,
+    "tooltipsDisabled": true
+  },
+  "selectedFilterLists": [
+    "user-filters",
+    "ublock-filters",
+    "ublock-badware",
+    "ublock-privacy",
+    "ublock-quick-fixes",
+    "ublock-unbreak",
+    "easylist",
+    "easyprivacy",
+    "LegitimateURLShortener",
+    "adguard-spyware-url",
+    "urlhaus-1",
+    "curben-phishing",
+    "plowe-0",
+    "fanboy-cookiemonster",
+    "ublock-cookies-easylist",
+    "adguard-cookies",
+    "ublock-cookies-adguard",
+    "fanboy-social",
+    "adguard-social",
+    "fanboy-thirdparty_social",
+    "easylist-chat",
+    "easylist-newsletters",
+    "easylist-notifications",
+    "easylist-annoyances",
+    "adguard-mobile-app-banners",
+    "adguard-other-annoyances",
+    "adguard-popup-overlays",
+    "adguard-widgets",
+    "ublock-annoyances"
+  ],
+  "hiddenSettings": {},
+  "whitelist": [
+    "chrome-extension-scheme",
+    "moz-extension-scheme"
+  ],
+  "dynamicFilteringString": "behind-the-scene * * noop\nbehind-the-scene * inline-script noop\nbehind-the-scene * 1p-script noop\nbehind-the-scene * 3p-script noop\nbehind-the-scene * 3p-frame noop\nbehind-the-scene * image noop\nbehind-the-scene * 3p noop",
+  "urlFilteringString": "",
+  "hostnameSwitchesString": "no-large-media: behind-the-scene false\nno-csp-reports: * true",
+  "userFilters": "! Mar 9, 2025 https://www.facebook.com\nwww.facebook.com##._8opy._95ke\nwww.facebook.com###reg_pages_msg\nwww.facebook.com##._6ltj\nwww.facebook.com##.x2b8uid.x8vdgqj.x14ler8.x1gja9t.x1tfhste > .x1rg5ohu\nwww.facebook.com##div.x1xka2u1\nwww.facebook.com##.x1hq5gj4\n\n! Mar 9, 2025 https://www.google.com\nwww.google.com##.dRpWwb.M8OgIe.bzXtMb\nwww.google.com##.appbar\nwww.google.com##.JryvJ\n\n! Mar 9, 2025 https://old.reddit.com\nold.reddit.com##.commentsignupbar.infobar\nold.reddit.com##.read-next-container\n\n! Mar 9, 2025 https://www.google.com\nwww.google.com##.autopagerize_page_info.pagetual_pageBar\n\n! Mar 10, 2025 https://www.google.com\nwww.google.com##.c93Gbe\nwww.google.com##a.MV3Tnb:nth-of-type(1)\nwww.google.com##a.MV3Tnb:nth-of-type(2)\n\n\n! Mar 10, 2025 https://weather.com\nweather.com##.Button--default--osTe5.styles--newItem--SJhwX.styles--listItem--oa7kn.ListItem--listItem--UuEqg\nweather.com##.styles--moreForecastsNav--Z2Zm1.styles--root--22cBk\nweather.com##a.Button--default--osTe5.styles--listItem--oa7kn.ListItem--listItem--UuEqg:nth-of-type(8)\n\n! Mar 10, 2025 https://old.reddit.com\nold.reddit.com##.menuarea\nold.reddit.com###sr-header-area > .sr-bar\nold.reddit.com###RESShortcutsEditContainer\n||b.thumbs.redditmedia.com/NjvgdvB3Bjl4huAaLDRcNEgceh7NtT7ZwMX01kfkMZM.png$image"
+}
