@@ -1,3 +1,5 @@
+<a href="https://www.buymeacoffee.com/mattcreatingthings" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
+
 # LibreWolf: Dark Portable Edition  
 **A carefully curated selection of settings, add-ons, and tweaks to enhance speed, usability, and aesthetics.**  
 
