@@ -21,7 +21,7 @@ Each add-on is thoughtfully configured to maximize usability:
 - **Reddit Enhancement Suite** – Pre-configured for an improved Reddit experience.  
 - **Tab Nine** – A sleek and functional new tab page, customized to my preferences.  
 
-## [Download latest zip here](https://github.com/SysAdminDoc/LibreWolf_DarkPortable/releases/tag/v0.0.5)
+## [Download latest here](https://github.com/SysAdminDoc/LibreWolf_DarkPortable/releases/tag/v0.0.5)
 
 If you want to support my caffeine addiction:
 
