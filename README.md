@@ -6,7 +6,7 @@
 ![librewolf2](https://github.com/user-attachments/assets/53be4b98-94e5-44ab-a790-6aadfa1ac30b)
 
 ## 📦 What's Included  
-**LibreWolf Dark Portable** – A fully configured profile with optimizations and [pre-installed tweaks](https://github.com/SysAdminDoc/LibreWolf_DarkPortable/blob/main/user.js) for an improved browsing experience.  
+**LibreWolf Dark Portable** – A fully [configured profile](https://github.com/SysAdminDoc/LibreWolf_DarkPortable/tree/main/Extension_Configs) with optimizations and [pre-installed tweaks](https://github.com/SysAdminDoc/LibreWolf_DarkPortable/blob/main/user.js) for an improved browsing experience.  
 
 Tab/Context Menu theme credit goes to [bmFtZQ](https://github.com/bmFtZQ)!
 
