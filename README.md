@@ -6,7 +6,7 @@
 ## 📦 What's Included  
 **LibreWolf Dark Portable** – A fully configured profile with optimizations and [pre-installed tweaks](https://github.com/SysAdminDoc/LibreWolf_DarkPortable/blob/main/user.js) for an improved browsing experience.  
 
-Theme: https://github.com/bmFtZQ/edge-frfox
+Tab/Context Menu theme credit goes to [bmFtZQ](https://github.com/bmFtZQ)!
 
 ## 🔧 Extensions & Enhancements  
 Each add-on is thoughtfully configured to maximize usability:  
