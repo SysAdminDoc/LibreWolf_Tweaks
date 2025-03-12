@@ -1,0 +1,8 @@
+/* Edge-Frfox */
+@import url("content/common.css");
+@import url("content/newtab.css");
+@import url("tweaks/sidebery.css") (-moz-bool-pref: "uc.tweak.theme.sidebery");
+@-moz-document url(about:support) {
+#reset-box {display:none !important;}
+}
+
