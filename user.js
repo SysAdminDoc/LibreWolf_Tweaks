@@ -1,3 +1,6 @@
+// Change scrollbar width --3/12/25
+user_pref("widget.non-native-theme.scrollbar.style", 3);
+
 // Disable accessibility services for privacy and security
 user_pref("app.normandy.enabled", false);
 user_pref("app.shield.optoutstudies.enabled", false);
