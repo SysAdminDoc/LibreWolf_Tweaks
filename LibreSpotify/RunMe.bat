@@ -20,7 +20,7 @@ color 0A
 echo *** Steps to be performed by this script: ***
 timeout /t 1 >nul
 
-echo Step 1: Install SpotX... This will help get Spotify ready!
+echo Step 1: Install SpotX... This installs an advertisement-free and bloatless Spotify!
 timeout /t 1 >nul
 
 echo Step 2: Log into Spotify to create local profile files on system.
