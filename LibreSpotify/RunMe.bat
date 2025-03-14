@@ -2,16 +2,13 @@
 taskkill /IM spotify.exe /F >nul 2>&1
 
 @@echo off
-:: Set the text color (green on black background)
 color 0A
 
-:: Clear screen and add a title
 cls
 echo **********************************************
 echo *** Welcome to the Ultimate Spotify Script ***
 echo **********************************************
 
-:: Add a 2-second pause for dramatic effect
 timeout /t 2 >nul
 
 color 0A
@@ -35,10 +32,8 @@ timeout /t 3 >nul
 pause
 color 0A
 
-:: Clear screen
 cls
 
-:: Display the colored ASCII art logo
 echo.
 echo  M     M    AAAAA    TTTTT   TTTTT   W   W    AAAAA   SSSSS      H   H   EEEEE   RRRRR   EEEEE
 echo  MM   MM   A     A     T       T     W W W   A     A  S          H   H   E       R   R   E
@@ -135,6 +130,49 @@ pause
 echo Apply Spicetify settings
 runas /trustlevel:0x20000 "powershell Spicetify apply"
 pause
+
+@echo off
+echo Before launching your new amazing Spotity. I'm leaving you with a message.
+timeout /t 5 >nul
+@echo off
+color 0A  
+cls
+
+color 0B
+echo "We are born from the stars..."
+timeout /t 2 >nul
+echo "Both literally and figuratively, we are star children."
+timeout /t 2 >nul
+echo.
+
+color 0E
+echo "The iron in your blood, the calcium in your teeth and bones..."
+timeout /t 2 >nul
+echo "The nitrogen in your DNA..."
+timeout /t 2 >nul
+echo "Exists only because massive stars forged these elements under immense pressure."
+timeout /t 3 >nul
+echo.
+
+color 0C
+echo "When these stars went supernova..."
+timeout /t 2 >nul
+echo "They scattered their cosmic essence across the universe..."
+timeout /t 2 >nul
+echo "Seeding the building blocks of life itself."
+timeout /t 3 >nul
+echo.
+
+color 0F
+echo "Every atom in you was once part of a dying star."
+timeout /t 2 >nul
+echo "So shine on, you magnificent supernovas."
+timeout /t 3 >nul
+echo.
+
+color 05
+pause
+
 
 @echo off
 echo Launching Spotify
