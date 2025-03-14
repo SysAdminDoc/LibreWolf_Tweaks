@@ -79,11 +79,10 @@ echo.                      ..ooo000@@@@@@@@@@@@@@@@@@@@@@@@000ooo..
 echo.                              ....oooooooooooooooo....                              
 echo.
 echo.
-timeout /t 1 >nul
+timeout /t 3 >nul
 @echo off
 mode con:cols=100 lines=55
 cls
-echo [92m
 
 timeout /t 3 >nul
 
