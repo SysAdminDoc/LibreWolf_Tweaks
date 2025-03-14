@@ -1,3 +1,6 @@
+// Change CORS to not break Google logins --3/14/25
+user_pref("security.fileuri.strict_origin_policy", false);
+
 // Change scrollbar width --3/12/25
 user_pref("widget.non-native-theme.scrollbar.style", 3);
 
