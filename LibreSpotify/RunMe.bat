@@ -87,74 +87,56 @@ echo Make sure to choose Y for yes.
 echo If Spotify launches afterward, please close it and come back here.
 pause
 
+echo Running Spicetify installation
 runas /trustlevel:0x20000 "powershell iwr -useb https://raw.githubusercontent.com/spicetify/cli/main/install.ps1 | iex"
 pause
-cls
-
-taskkill /IM spotify.exe /F >nul 2>&1
-
 
 @echo off
 echo Congratulations, spicetify and its marketplace is installed.
 pause
 
-
-runas /trustlevel:0x20000 "powershell Spicetify restore backup apply"
-
-@echo off
-echo Countdown starts now:
-for /l %%i in (30,-1,0) do (
-    echo %%i
-    timeout /t 1 >nul
-)
-
-runas /trustlevel:0x20000 "powershell Spicetify backup apply"
-
-@echo off
-echo Countdown starts now:
-for /l %%i in (30,-1,0) do (
-    echo %%i
-    timeout /t 1 >nul
-)
-
-runas /trustlevel:0x20000 "powershell Spicetify upgrade"
-
-@echo off
-echo Countdown starts now:
-for /l %%i in (30,-1,0) do (
-    echo %%i
-    timeout /t 1 >nul
-)
-
-
-echo Closing Spotify if running...
 taskkill /IM spotify.exe /F >nul 2>&1
 
+cls
+@echo off
+echo Running Spicetify restore
+runas /trustlevel:0x20000 "powershell Spicetify restore backup apply"
+pause
+
+cls
+@echo off
+echo Running Spicetify backup
+runas /trustlevel:0x20000 "powershell Spicetify backup apply"
+pause
+
+cls
+@echo off
+echo Running Spicetify upgrade
+runas /trustlevel:0x20000 "powershell Spicetify upgrade"
+pause
+
+cls
+echo Closing Spotify if running...
+taskkill /IM spotify.exe /F >nul 2>&1
+cls
 
 @echo off
 echo Downloading and executing config file restore script...
 powershell -ExecutionPolicy Bypass -NoProfile -Command ^
 "Start-Process powershell -ArgumentList \"-ExecutionPolicy Bypass -NoProfile -Command & {Invoke-Expression (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/SysAdminDoc/LibreWolf_DarkPortable/refs/heads/main/LibreSpotify/DownloadConfigs.ps1')}\" -Wait"
+cls
 
-
+@echo off
+echo Run Spicetify restore backup to create folders
 runas /trustlevel:0x20000 "powershell Spicetify restore backup"
+pause
 
 @echo off
-echo Countdown starts now:
-for /l %%i in (10,-1,0) do (
-    echo %%i
-    timeout /t 1 >nul
-)
-
+echo Apply Spicetify settings
 runas /trustlevel:0x20000 "powershell Spicetify apply"
+pause
 
 @echo off
-echo Countdown to launching Spotify:
-for /l %%i in (10,-1,0) do (
-    echo %%i
-    timeout /t 1 >nul
-)
-
-
+echo Launching Spotify
 start "" "%APPDATA%\Spotify\Spotify.exe"
 
