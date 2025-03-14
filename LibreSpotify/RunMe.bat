@@ -1,6 +1,11 @@
 @echo off
 taskkill /IM spotify.exe /F >nul 2>&1
 
+@echo off
+mode con:cols=100 lines=55
+powershell -Command "&{(Get-Process -Id $PID).MainWindowHandle | ForEach-Object { if ($_ -ne 0) { (New-Object -ComObject Shell.Application).MinimizeAll(); (New-Object -ComObject WScript.Shell).SendKeys('^{ESC}'); Start-Sleep -Milliseconds 500; (New-Object -ComObject WScript.Shell).SendKeys('{F11}') }}}"
+cls
+
 @@echo off
 color 0A
 
@@ -34,14 +39,51 @@ color 0A
 
 cls
 
+mode con:cols=100 lines=55
 echo.
 echo  M     M    AAAAA    TTTTT   TTTTT   W   W    AAAAA   SSSSS      H   H   EEEEE   RRRRR   EEEEE
 echo  MM   MM   A     A     T       T     W W W   A     A  S          H   H   E       R   R   E
 echo  M M M M   AAAAAAA     T       T     W W W   AAAAAAA  SSSSS      HHHHH   EEEE    RRRRR   EEEE
 echo  M  M  M   A     A     T       T     W W W   A     A      S      H   H   E       R  R    E
 echo  M     M   A     A     T       T      W W    A     A  SSSSS      H   H   EEEEE   R   R   EEEEE
-
 echo.
+echo  .........                                                              .........  
+echo  ................                     ......                     ................  
+echo  .....................       ........................       .....................  
+echo  .... ................. .................................  ................. ...   
+echo   ... [101m0@@@00ooo[0m....................................................[101mooo00@@@0[0m ...   
+echo   ... [101mo@@@@@@@@@0o[0m..............................................[101mo@@@@@@@@@@o[0m ...   
+echo    ....[101m0@@@@@@0o[0m..................................................[101mo@@@@@@@0[0m....    
+echo    ... [101mo@@@@@o[0m......................................................[101m0@@@@@o[0m ...    
+echo     ....[101m0@@0[0m.........................................................[101mo@@@0[0m....     
+echo     ... [101m.@0[0m............................................................[101m0@[0m.....     
+echo      ... [101mo[0m..............................................................[101mo[0m ...      
+echo       ... .............................................................  ...       
+echo        .. .............................................................. ..        
+echo          ...........[42mo0o.....ooo[0m....................[42mooo.....o0o[0m...........          
+echo          .........[42mo00o[40m       [42mo00o[0m.......oo.......[42mo000[40m       [42mo00o[0m.........          
+echo         .........[42mo00o[40m         [42m000o[0m......00......[42mo00o[40m         [42m000o[0m........          
+echo         ..........[42mo00[40m         [42m000o[0m ....0@@0.....[42m000o[40m         [42m00o[0m.........          
+echo  ...oooooooooo.....[42mo0o[40m       [42mo00o[0m.....0@@@@0.....[42mo00o[40m       [42mo0o[0m.....oooooooooo...  
+echo  ........ooooooooo...[42mooo...oooo[0m.....o0@@@@@@0o.....[42moooo...ooo[0m..oooooooooo......o.  
+echo       ...........oo................o0@@@@@@@@@o...............ooo...........       
+echo       ..ooooooooooo..............o0@@@@@@@@@@@@0o..............ooooooooooo..       
+echo..oooooooooooooooooooo..........oo0@@@@@@@@@@@@@@@@0oo..........ooooooooooooooooooo..
+echo....      ...................oo0@@@@@@@@@@@@@@@@@@@@@@0oo...................     ....
+echo.          ..ooooooooooooo00@@@@@oo@@@@@@0oo0@@@@@0oo@@@@@00ooooooooooooo..          
+echo.        .oooo.o00000@@@@@@@@@@@@@ooooooo000oooooo.o@@@@@@@@@@@@@0000o..oooo.        
+echo.      ooo.  .0@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@0oo0@@@@@@@@@@@@@@@@@@@o. ..oo.      
+echo.              .oo0@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@0oo.              
+echo.                  .oo0@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@0oo.                  
+echo.                      ..ooo000@@@@@@@@@@@@@@@@@@@@@@@@000ooo..                      
+echo.                              ....oooooooooooooooo....                              
+echo.
+echo.
+timeout /t 1 >nul
+@echo off
+mode con:cols=100 lines=55
+cls
+echo [92m
 
 timeout /t 3 >nul
 
@@ -172,7 +214,6 @@ echo.
 
 color 05
 pause
-
 
 @echo off
 echo Launching Spotify
