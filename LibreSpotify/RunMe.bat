@@ -10,12 +10,12 @@ cls
 color 0A
 
 cls
-echo **********************************************
-echo *** Welcome to the Ultimate Spotify Script ***
-echo **********************************************
+echo *******************************
+echo *** Welcome to LibreSpotify ***
+echo *******************************
 
-timeout /t 2 >nul
-
+timeout /t 3 >nul
+cls
 color 0A
 echo *** Steps to be performed by this script: ***
 timeout /t 1 >nul
@@ -119,8 +119,8 @@ cls
 
 @echo off
 echo This next script will ask if you want to install the marketplace.
-echo Make sure to choose Y for yes.
-echo If Spotify launches afterward, please close it and come back here.
+echo Make sure to choose Y for yes when it asks.
+echo If Spotify launches afterward, close it and come back here.
 pause
 
 echo Running Spicetify installation
@@ -156,24 +156,24 @@ echo Closing Spotify if running...
 taskkill /IM spotify.exe /F >nul 2>&1
 cls
 
-@echo off
-echo Downloading and executing config file restore script...
-powershell -ExecutionPolicy Bypass -NoProfile -Command ^
-"Start-Process powershell -ArgumentList \"-ExecutionPolicy Bypass -NoProfile -Command & {Invoke-Expression (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/SysAdminDoc/LibreWolf_DarkPortable/refs/heads/main/LibreSpotify/DownloadConfigs.ps1')}\" -Wait"
+:: @echo off
+:: echo Downloading and executing config file restore script...
+:: powershell -ExecutionPolicy Bypass -NoProfile -Command ^
+:: "Start-Process powershell -ArgumentList \"-ExecutionPolicy Bypass -NoProfile -Command & {Invoke-Expression (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/SysAdminDoc/LibreWolf_DarkPortable/refs/heads/main/LibreSpotify/DownloadConfigs.ps1')}\" -Wait"
 cls
 
-@echo off
-echo Run Spicetify restore backup to create folders
-runas /trustlevel:0x20000 "powershell Spicetify restore backup"
+:: @echo off
+:: echo Run Spicetify restore backup to create folders
+:: runas /trustlevel:0x20000 "powershell Spicetify restore backup"
+:: pause
+
+:: @echo off
+:: echo Apply Spicetify settings
+:: runas /trustlevel:0x20000 "powershell Spicetify apply"
 pause
 
 @echo off
-echo Apply Spicetify settings
-runas /trustlevel:0x20000 "powershell Spicetify apply"
-pause
-
-@echo off
-echo Before launching your new amazing Spotity. I'm leaving you with a message.
+echo Before launching your new amazing Spotify, I'll leave you with a message.
 timeout /t 5 >nul
 @echo off
 color 0A  
