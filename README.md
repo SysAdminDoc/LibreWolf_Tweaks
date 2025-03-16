@@ -1,3 +1,5 @@
+[![🚀 Read the Full Announcement! 🚀](https://img.shields.io/badge/Massive_Overhaul-Read_Now-blue?style=for-the-badge)](https://github.com/SysAdminDoc/LibreWolf_DarkPortable/discussions/2)
+
 # LibreWolf: Dark Portable Edition  
 **A carefully curated selection of settings, add-ons, and tweaks to enhance speed, usability, and aesthetics.**  
 
