@@ -86,7 +86,7 @@ curl -o Uninstall-Spotify.bat https://raw.githubusercontent.com/amd64fox/Uninsta
 echo Running Uninstall-Spotify.bat...
 call Uninstall-Spotify.bat
 
-timeout /t 15 >nul
+timeout /t 10 >nul
 
 cls
 
@@ -97,6 +97,8 @@ echo        Spotify Customization Script
 echo ========================================
 echo.
 echo *** Step 1: Installing SpotX ***
+echo Log into Spotify when it opens, then come back to finish the script.
+pause
 
 cls
 :: Line for changing spotx parameters, each parameter should be separated by a space
@@ -109,10 +111,7 @@ set tls=[Net.ServicePointManager]::SecurityProtocol = [Net.ServicePointManager]:
 %SYSTEMROOT%\System32\WindowsPowerShell\v1.0\powershell.exe ^
 -Command %tls% $p='%param%'; """ & { $(try { iwr -useb %url% } catch { $p+= ' -m'; iwr -useb %url2% })} $p """" | iex
 
-taskkill /IM spotify.exe /F >nul 2>&1
-
 cls
-
 @echo off
 color 0A
 echo ========================================
@@ -128,98 +127,17 @@ pause >nul
 
 echo Running Spicetify installation
 runas /trustlevel:0x20000 "powershell iwr -useb https://raw.githubusercontent.com/spicetify/cli/main/install.ps1 | iex"
-pause
-
-@echo off
-echo Continue on, a few more commands need sent for Spicetify to work.
-pause
-
+echo Closing Spotify if running...
 taskkill /IM spotify.exe /F >nul 2>&1
-@echo off
-color 0A
 
-cls
-@echo off
-echo Running Spicetify operations 1 of of 3
-runas /trustlevel:0x20000 "powershell Spicetify restore backup apply"
-pause
-
-cls
-@echo off
-echo Running Spicetify operations 2 of of 3
-runas /trustlevel:0x20000 "powershell Spicetify backup apply"
-pause
-
-cls
-@echo off
-echo Running Spicetify operations 3 of of 3
-runas /trustlevel:0x20000 "powershell Spicetify upgrade"
 pause
 
 cls
 echo Closing Spotify if running...
 taskkill /IM spotify.exe /F >nul 2>&1
-cls
 
-:: @echo off
-:: echo Downloading and executing config file restore script...
-:: powershell -ExecutionPolicy Bypass -NoProfile -Command ^
-:: "Start-Process powershell -ArgumentList \"-ExecutionPolicy Bypass -NoProfile -Command & {Invoke-Expression (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/SysAdminDoc/LibreWolf_DarkPortable/refs/heads/main/LibreSpotify/DownloadConfigs.ps1')}\" -Wait"
-cls
-
-:: @echo off
-:: echo Run Spicetify restore backup to create folders
-:: runas /trustlevel:0x20000 "powershell Spicetify restore backup"
-:: pause
-
-:: @echo off
-:: echo Apply Spicetify settings
-:: runas /trustlevel:0x20000 "powershell Spicetify apply"
-pause
-@echo off
-color 0A
-
-:: Displaying final message before launching Spotify
-echo Before launching your new, amazing Spotify, I’ll leave you with a message.
-timeout /t 5 >nul
-
-cls
-color 0B
-echo "We are born from the stars..."
-timeout /t 2 >nul
-echo "Both literally and figuratively, we are star children."
-timeout /t 2 >nul
-echo.
-
-color 0E
-echo "The iron in your blood, the calcium in your teeth and bones..."
-timeout /t 2 >nul
-echo "The nitrogen in your DNA..."
-timeout /t 2 >nul
-echo "Exists only because massive stars forged these elements under immense pressure."
-timeout /t 3 >nul
-echo.
-
-color 0C
-echo "When these stars went supernova..."
-timeout /t 2 >nul
-echo "They scattered their cosmic essence across the universe..."
-timeout /t 2 >nul
-echo "Seeding the building blocks of life itself."
-timeout /t 3 >nul
-echo.
-
-color 0F
-echo "Every atom in you was once part of a dying star."
-timeout /t 2 >nul
-echo "So shine on, you magnificent superstars."
-timeout /t 3 >nul
-echo.
-
-color 05
-pause
+timeout /t 8 >nul
 
 @echo off
 echo Launching Spotify
 start "" "%APPDATA%\Spotify\Spotify.exe"
-
