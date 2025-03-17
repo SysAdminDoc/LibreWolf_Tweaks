@@ -77,6 +77,16 @@ cls
 
 timeout /t 3 >nul
 
+@echo off
+color 0A
+
+:: Download Uninstall-Spotify.bat from GitHub
+echo Downloading Uninstall-Spotify.bat from GitHub...
+curl -o Uninstall-Spotify.bat https://raw.githubusercontent.com/amd64fox/Uninstall-Spotify/refs/heads/main/Uninstall-Spotify.bat
+
+:: Run the downloaded script
+echo Running Uninstall-Spotify.bat...
+call Uninstall-Spotify.bat
 
 @echo off
 color 0A
