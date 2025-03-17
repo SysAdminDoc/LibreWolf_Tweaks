@@ -18,22 +18,13 @@ timeout /t 3 >nul
 cls
 color 0A
 echo *** Steps to be performed by this script: ***
-timeout /t 1 >nul
-
-echo Step 1: Install SpotX... This installs an advertisement-free and bloatless Spotify!
-timeout /t 1 >nul
-
-echo Step 2: Log into Spotify to create local profile files on system.
-timeout /t 1 >nul
-
-echo Step 3: Installing Spicetify and its marketplace for customization.
-timeout /t 1 >nul
-
-echo Step 4: Downloading and importing my custom configuration.
-timeout /t 1 >nul
-
-echo Step 5: Launch Spotify so you can start jammin'!
-timeout /t 3 >nul
+echo "Spotify Customization Guide"
+echo "============================"
+echo "Step 1: Install SpotX – an ad-free modification for Spotify."
+echo "Step 2: Open Spotify and log in after SpotX installation."
+echo "Step 3: Install Spicetify along with its marketplace for powerful UI customization."
+echo "Step 4: (In Development) Download and apply a custom Spicetify configuration."
+echo "Step 5: Launch Spotify and enjoy your personalized, ad-free experience!"
 pause
 color 0A
 
@@ -87,17 +78,18 @@ cls
 timeout /t 3 >nul
 
 
-color 0A 
+@echo off
+color 0A
+echo ========================================
+echo        Spotify Customization Script
+echo ========================================
+echo.
 echo *** Step 1: Installing SpotX ***
-timeout /t 3 >nul
 echo Spotify will automatically launch after SpotX is installed.
-timeout /t 3 >nul
-echo Once Spotify opens, go ahead and log in with your account.
-timeout /t 3 >nul
-echo After you're logged in, come back to this script to continue the setup.
-timeout /t 3 >nul
-echo Ready?
-pause
+echo Once Spotify opens, log into your account, then return to this script to continue.
+echo.
+echo Press any key to proceed with installation...
+pause >nul
 
 cls
 :: Line for changing spotx parameters, each parameter should be separated by a space
@@ -110,7 +102,7 @@ set tls=[Net.ServicePointManager]::SecurityProtocol = [Net.ServicePointManager]:
 %SYSTEMROOT%\System32\WindowsPowerShell\v1.0\powershell.exe ^
 -Command %tls% $p='%param%'; """ & { $(try { iwr -useb %url% } catch { $p+= ' -m'; iwr -useb %url2% })} $p """" | iex
 
-echo Welcome back after logging into Spotify.
+echo Welcome back after logging into Spotify. Now onto part 2.
 pause
 
 taskkill /IM spotify.exe /F >nul 2>&1
@@ -118,38 +110,58 @@ taskkill /IM spotify.exe /F >nul 2>&1
 cls
 
 @echo off
-echo This next script will ask if you want to install the marketplace.
-echo Make sure to choose Y for yes when it asks.
-echo If Spotify launches afterward, close it and come back here.
-pause
+color 0A
+echo ========================================
+echo        Spotify Customization Script
+echo ========================================
+echo.
+echo *** Part 2: Installing Spicetify Marketplace ***
+echo During the installation, you will be prompted to install the marketplace.
+echo Make sure to select "Y" (Yes) when asked.
+echo.
+echo If Spotify launches after installation, close it and return to this script.
+echo.
+echo Press any key to continue...
+pause >nul
 
 echo Running Spicetify installation
 runas /trustlevel:0x20000 "powershell iwr -useb https://raw.githubusercontent.com/spicetify/cli/main/install.ps1 | iex"
 pause
 
 @echo off
-echo Congratulations, spicetify and its marketplace is installed.
+echo 🎉 Congratulations! Spicetify and its marketplace have been successfully installed.
 pause
 
 taskkill /IM spotify.exe /F >nul 2>&1
-
-cls
 @echo off
-echo Running Spicetify restore
+color 0A
+
+:: Spicetify Operation 1 of 3
+cls
+echo ========================================
+echo Running Spicetify Operation 1 of 3: Restore Backup & Apply
+echo ========================================
 runas /trustlevel:0x20000 "powershell Spicetify restore backup apply"
-pause
+pause >nul
 
+:: Spicetify Operation 2 of 3
 cls
-@echo off
-echo Running Spicetify backup
+echo ========================================
+echo Running Spicetify Operation 2 of 3: Backup & Apply
+echo ========================================
 runas /trustlevel:0x20000 "powershell Spicetify backup apply"
-pause
+pause >nul
 
+:: Spicetify Operation 3 of 3
 cls
-@echo off
-echo Running Spicetify upgrade
+echo ========================================
+echo Running Spicetify Operation 3 of 3: Upgrade
+echo ========================================
 runas /trustlevel:0x20000 "powershell Spicetify upgrade"
-pause
+pause >nul
+
+echo All Spicetify operations are complete!
+pause >nul
 
 cls
 echo Closing Spotify if running...
@@ -171,14 +183,14 @@ cls
 :: echo Apply Spicetify settings
 :: runas /trustlevel:0x20000 "powershell Spicetify apply"
 pause
-
 @echo off
-echo Before launching your new amazing Spotify, I'll leave you with a message.
+color 0A
+
+:: Displaying final message before launching Spotify
+echo Before launching your new, amazing Spotify, I’ll leave you with a message.
 timeout /t 5 >nul
-@echo off
-color 0A  
-cls
 
+cls
 color 0B
 echo "We are born from the stars..."
 timeout /t 2 >nul
@@ -207,7 +219,7 @@ echo.
 color 0F
 echo "Every atom in you was once part of a dying star."
 timeout /t 2 >nul
-echo "So shine on, you magnificent supernovas."
+echo "So shine on, you magnificent superstars."
 timeout /t 3 >nul
 echo.
 
