@@ -21,10 +21,8 @@ echo *** Steps to be performed by this script: ***
 echo "Spotify Customization Guide"
 echo "============================"
 echo "Step 1: Install SpotX, an ad-free modification for Spotify."
-echo "Step 2: Open Spotify and log in after SpotX installation."
-echo "Step 3: Install Spicetify along with its marketplace for powerful UI customization."
-echo "Step 4: (In Development) Download and apply a custom Spicetify configuration."
-echo "Step 5: Launch Spotify and enjoy your personalized, ad-free experience!"
+echo "Step 2: Install Spicetify along with its marketplace for powerful UI customization."
+echo "Step 3: (In Development) Download and apply a custom Spicetify configuration."
 pause
 color 0A
 
@@ -88,6 +86,8 @@ curl -o Uninstall-Spotify.bat https://raw.githubusercontent.com/amd64fox/Uninsta
 echo Running Uninstall-Spotify.bat...
 call Uninstall-Spotify.bat
 
+cls
+
 @echo off
 color 0A
 echo ========================================
@@ -95,11 +95,6 @@ echo        Spotify Customization Script
 echo ========================================
 echo.
 echo *** Step 1: Installing SpotX ***
-echo Spotify will automatically launch after SpotX is installed.
-echo Once Spotify opens, log into your account, then return to this script to continue.
-echo.
-echo Press any key to proceed with installation...
-pause >nul
 
 cls
 :: Line for changing spotx parameters, each parameter should be separated by a space
@@ -111,9 +106,6 @@ set tls=[Net.ServicePointManager]::SecurityProtocol = [Net.ServicePointManager]:
 
 %SYSTEMROOT%\System32\WindowsPowerShell\v1.0\powershell.exe ^
 -Command %tls% $p='%param%'; """ & { $(try { iwr -useb %url% } catch { $p+= ' -m'; iwr -useb %url2% })} $p """" | iex
-
-echo Welcome back after logging into Spotify. Now onto part 2.
-pause
 
 taskkill /IM spotify.exe /F >nul 2>&1
 
@@ -129,8 +121,6 @@ echo *** Part 2: Installing Spicetify Marketplace ***
 echo During the installation, you will be prompted to install the marketplace.
 echo Make sure to select "Y" (Yes) when asked.
 echo.
-echo If Spotify launches after installation, close it and return to this script.
-echo.
 echo Press any key to continue...
 pause >nul
 
@@ -139,7 +129,7 @@ runas /trustlevel:0x20000 "powershell iwr -useb https://raw.githubusercontent.co
 pause
 
 @echo off
-echo Congratulations! Spicetify and its marketplace have been successfully installed.
+echo Continue on, a few more commands need sent for Spicetify to work.
 pause
 
 taskkill /IM spotify.exe /F >nul 2>&1
