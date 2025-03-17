@@ -86,6 +86,8 @@ curl -o Uninstall-Spotify.bat https://raw.githubusercontent.com/amd64fox/Uninsta
 echo Running Uninstall-Spotify.bat...
 call Uninstall-Spotify.bat
 
+timeout /t 15 >nul
+
 cls
 
 @echo off
