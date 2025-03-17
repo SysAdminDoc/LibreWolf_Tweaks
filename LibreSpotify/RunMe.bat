@@ -136,32 +136,23 @@ taskkill /IM spotify.exe /F >nul 2>&1
 @echo off
 color 0A
 
-:: Spicetify Operation 1 of 3
 cls
-echo ========================================
-echo Running Spicetify Operation 1 of 3. Restore Backup & Apply
-echo ========================================
+@echo off
+echo Running Spicetify operations 1 of of 3
 runas /trustlevel:0x20000 "powershell Spicetify restore backup apply"
-pause >nul
+pause
 
-:: Spicetify Operation 2 of 3
 cls
-echo ========================================
-echo Running Spicetify Operation 2 of 3. Backup & Apply
-echo ========================================
+@echo off
+echo Running Spicetify operations 2 of of 3
 runas /trustlevel:0x20000 "powershell Spicetify backup apply"
-pause >nul
+pause
 
-:: Spicetify Operation 3 of 3
 cls
-echo ========================================
-echo Running Spicetify Operation 3 of 3. Upgrade
-echo ========================================
+@echo off
+echo Running Spicetify operations 3 of of 3
 runas /trustlevel:0x20000 "powershell Spicetify upgrade"
-pause >nul
-
-echo All Spicetify operations are complete!
-pause >nul
+pause
 
 cls
 echo Closing Spotify if running...
