@@ -20,7 +20,7 @@ color 0A
 echo *** Steps to be performed by this script: ***
 echo "Spotify Customization Guide"
 echo "============================"
-echo "Step 1: Install SpotX – an ad-free modification for Spotify."
+echo "Step 1: Install SpotX...an ad-free modification for Spotify."
 echo "Step 2: Open Spotify and log in after SpotX installation."
 echo "Step 3: Install Spicetify along with its marketplace for powerful UI customization."
 echo "Step 4: (In Development) Download and apply a custom Spicetify configuration."
@@ -129,7 +129,7 @@ runas /trustlevel:0x20000 "powershell iwr -useb https://raw.githubusercontent.co
 pause
 
 @echo off
-echo 🎉 Congratulations! Spicetify and its marketplace have been successfully installed.
+echo Congratulations! Spicetify and its marketplace have been successfully installed.
 pause
 
 taskkill /IM spotify.exe /F >nul 2>&1
@@ -139,7 +139,7 @@ color 0A
 :: Spicetify Operation 1 of 3
 cls
 echo ========================================
-echo Running Spicetify Operation 1 of 3: Restore Backup & Apply
+echo Running Spicetify Operation 1 of 3. Restore Backup & Apply
 echo ========================================
 runas /trustlevel:0x20000 "powershell Spicetify restore backup apply"
 pause >nul
@@ -147,7 +147,7 @@ pause >nul
 :: Spicetify Operation 2 of 3
 cls
 echo ========================================
-echo Running Spicetify Operation 2 of 3: Backup & Apply
+echo Running Spicetify Operation 2 of 3. Backup & Apply
 echo ========================================
 runas /trustlevel:0x20000 "powershell Spicetify backup apply"
 pause >nul
@@ -155,7 +155,7 @@ pause >nul
 :: Spicetify Operation 3 of 3
 cls
 echo ========================================
-echo Running Spicetify Operation 3 of 3: Upgrade
+echo Running Spicetify Operation 3 of 3. Upgrade
 echo ========================================
 runas /trustlevel:0x20000 "powershell Spicetify upgrade"
 pause >nul
