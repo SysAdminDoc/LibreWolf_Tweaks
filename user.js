@@ -1,3 +1,12 @@
+// Enable enterprise policy loading
+user_pref("general.config.filename", "librewolf.cfg");
+user_pref("general.config.obscure_value", 0);
+
+// Allow installation of extensions from URL
+user_pref("xpinstall.signatures.required", false);
+user_pref("xpinstall.whitelist.required", false);
+user_pref("xpinstall.enabled", true);
+
 // Change CORS to not break Google logins --3/14/25
 user_pref("security.fileuri.strict_origin_policy", false);
 
