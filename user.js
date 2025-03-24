@@ -1,8 +1,8 @@
-// Enable enterprise policy loading
+// Enable enterprise policy loading --3/24/25 Troubleshooting Add-on AutoInstall
 user_pref("general.config.filename", "librewolf.cfg");
 user_pref("general.config.obscure_value", 0);
 
-// Allow installation of extensions from URL
+// Allow installation of extensions from URL --3/24/25 Troubleshooting Add-on AutoInstall
 user_pref("xpinstall.signatures.required", false);
 user_pref("xpinstall.whitelist.required", false);
 user_pref("xpinstall.enabled", true);
