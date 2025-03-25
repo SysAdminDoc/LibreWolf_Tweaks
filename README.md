@@ -14,6 +14,7 @@
 
 - Tab/Context Menu theme credit goes to [bmFtZQ](https://github.com/bmFtZQ)!
 - Dark mode theme inspiration goes to [dracula](https://github.com/dracula/dracula-theme)!
+- Updater credit goes to [ltguilluame](https://codeberg.org/ltguillaume/librewolf-WinUpdater)!
 
 ## 🔧 Extensions & Enhancements  
 Each add-on is thoughtfully configured to maximize usability:  
